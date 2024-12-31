@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-void printOneToN(int n)
+void printNToOne(int n)
 {
     if (n > 0)
     {
         cout << n << " ";
-        printOneToN(n - 1);
+        printNToOne(n - 1);
     }
 }
 
 int main()
 {
-    printOneToN(12);
+    printNToOne(12);
     return 0;
 }
